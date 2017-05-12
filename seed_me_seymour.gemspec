@@ -6,18 +6,16 @@ require 'seed_me_seymour/version'
 Gem::Specification.new do |spec|
   spec.name          = "seed_me_seymour"
   spec.version       = SeedMeSeymour::VERSION
-  spec.authors       = ["Brandon Garibaldi"]
-  spec.email         = ["bmg.oak@gmail.com"]
-
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
-  spec.license       = "MIT"
+  spec.authors       = ["Tony Saric", "Brandon Garibaldi" ]
+  spec.email         = ["saric.tony@gmail.com\n", "bmg.oak@gmail.com\n"]
+  spec.licenses      = ['MIT']
+  spec.summary       = %q{This gem will analyze your current database and make a seed file with pre-populated seed information using faker}
+  spec.homepage      = "https://github.com/setthecontrols/seed_me_seymour"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = 'https://rubygems.org'
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
@@ -32,5 +30,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.14"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rspec", "~> 3.6"
 end
